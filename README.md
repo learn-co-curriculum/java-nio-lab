@@ -2,30 +2,31 @@
 
 ## Learning Goals
 
-- Learning Goal 1
-- Learning Goal 2
-
-## Introduction
-
-A 1-2 sentence summary of what will be covered.
+- Practice reading and writing a text file using the `Files` class from the
+  `java.nio` package.
 
 ## Instructions
 
-Walk the student through any setup required to run the lesson (i.e.
-`npm install` and `npm start`).
+Given the `GroceryListDriver` class again, modify the program to use the
+`Files` class from the `java.nio` package to read and write a text file.
 
-## Deliverables
+Reuse the last lab to modify the methods you already wrote to use the new
+classes we just learned about.
 
-List each of the deliverables the student must complete in order to finish the
-lab. Provide as much context as possible, including instructions on how to run
-the tests and other means of validating successful completion of deliverables.
+To implement the reading and writing of a text file, consider the following
+instructions and tips:
 
-## Conclusion
-
-A short one or two paragraph summary of the contents of the lessons, recapping
-the learning goals.
-
-## Resources
-
-- [Resource Link 1](example.com)
-- [Resource Link 2](example.com)
+- Modify the `GroceryListDriver` class.
+    - Rewrite the method to write to a text file.
+        - Use the `writeString()` method to write to a text file.
+        - Each item in the list should be on its own new line.
+        - Refer back to the Java NIO lesson.
+    - Rewrite the method to read a text file line-by-line.
+        - Use either the `readString()` method or the `readAllLines()` method to
+          read from the text file.
+        - Return a `String` to print out to the console the list of groceries.
+        - Refer back to the Java NIO lesson.
+- When running the `GroceryListDriver` class, pass in a file named
+  `grocery-list.txt`.
+- Remove the `@Disabled` annotation from the unit tests and ensure that the
+  tests pass successfully. Refactor as needed.
